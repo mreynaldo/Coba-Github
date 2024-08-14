@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Tugas Pertemuan 7 (Toggle)</h1>
+        <h2>Muhammad Reynaldo Aulia Rachman<br>(2210631170087)</h2>
+    </div>
+    <div id="toggle" class="toggle">
+        <button class="indikator">Dark Mode</button>
+    </div>
+</body>
+
+<script>
+    const body = document.querySelector('body');
+    const toggle = document.getElementById('toggle');
+    toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        body.classList.toggle('active');
+    }
+</script>
+
+</html>
